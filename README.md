@@ -1,1 +1,3 @@
-`javascript:${window.encodeURI(`(function(){alert("test!")})()`)}`
+```js
+const generator = code => `javascript:${window.encodeURI(`(function(){${code}})()`)}`
+```
